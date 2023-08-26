@@ -20,7 +20,15 @@ public class AstralCashier {
     @Override
     public String toString() {
         StringBuilder resumo = new StringBuilder();
-        return "Caixa Astral: ";
+        resumo.append("Resumo Casa Astral:%n");
+        resumo.append("-".repeat(20)+"%n");
+        resumo.append(debito);
+        resumo.append("-".repeat(20)+"%n");
+        resumo.append(credito);
+        resumo.append("-".repeat(20)+"%n");
+        resumo.append(dinheiro);
+        resumo.append("-".repeat(20)+"%n");
+        return resumo.toString();
     }
 
 }
