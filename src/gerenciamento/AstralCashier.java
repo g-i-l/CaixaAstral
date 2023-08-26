@@ -7,14 +7,27 @@ public class AstralCashier {
     private CreditSale credito;
     private CashSale dinheiro;
 
-    public AstralCashier(DebitSale debito, CreditSale credito, CashSale dinheiro) {
-        this.debito = debito;
-        this.credito = credito;
-        this.dinheiro = dinheiro;
+    public AstralCashier(double initialAmount) {
+        this.debito = new DebitSale();
+        this.credito = new CreditSale();
+        this.dinheiro = new CashSale(initialAmount);
     }
 
     private double totalReceipt() {
         return debito.getValue() + credito.getValue() + dinheiro.getValue();
+    }
+
+    
+    public DebitSale getDebito() {
+        return debito;
+    }
+
+    public CreditSale getCredito() {
+        return credito;
+    }
+
+    public CashSale getDinheiro() {
+        return dinheiro;
     }
 
     @Override

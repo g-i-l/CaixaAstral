@@ -48,4 +48,12 @@ public abstract class Sale {
         return this.value;
     }
 
+    public void withdrawValue(double value) {
+        withdraw(value);
+    }
+
+    public void incomeValue(double value) {
+        income(value);
+    }
+
 }

@@ -8,7 +8,7 @@ public class DebitSale extends Sale {
         this.sales = new ArrayList<Double>();
     }
 
-    public void incomeValue(double value) {
-        income(value);
-    }
+    
+
+    
 }
