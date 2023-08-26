@@ -11,8 +11,4 @@ public class DebitSale extends Sale {
     public void incomeValue(double value) {
         income(value);
     }
-
-    public void getSummary() {
-        System.out.println(summary());
-    }
 }

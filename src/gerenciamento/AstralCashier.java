@@ -13,8 +13,14 @@ public class AstralCashier {
         this.dinheiro = dinheiro;
     }
 
-    private double totalReceipt(){
-        
+    private double totalReceipt() {
+        return debito.getValue() + credito.getValue() + dinheiro.getValue();
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder resumo = new StringBuilder();
+        return "Caixa Astral: ";
     }
 
 }

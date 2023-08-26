@@ -36,6 +36,12 @@ public abstract class Sale {
         return summary.toString();
     }
 
+    
+
+    @Override
+    public String toString() {
+        return summary();
+    }
     public double getValue(){
         return this.value;
     }
