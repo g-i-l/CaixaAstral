@@ -35,5 +35,9 @@ public abstract class Sale {
         summary.append(String.format("%s Total de Receita: R$%.2f",getClass().getName(),value));
         return summary.toString();
     }
+
+    public double getValue(){
+        return this.value;
+    }
     
 }
